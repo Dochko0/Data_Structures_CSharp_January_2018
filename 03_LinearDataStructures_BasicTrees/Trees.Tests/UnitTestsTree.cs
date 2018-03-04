@@ -26,6 +26,8 @@ public class UnitTestsTree
         var nodes = new List<int>();
         tree.Each(nodes.Add);
 
+        //tree.Print();
+
         // Assert
         var expectedNodes = new int[] { 7, 19, 1, 12, 31, 21, 14, 23, 6 };
         CollectionAssert.AreEqual(expectedNodes, nodes);

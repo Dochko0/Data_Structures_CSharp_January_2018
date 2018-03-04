@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 
 public class PlayWithTrees
 {
@@ -10,7 +8,7 @@ public class PlayWithTrees
             new Tree<int>(7,
                 new Tree<int>(19,
                     new Tree<int>(1),
-                    new Tree<int>(12) ,
+                    new Tree<int>(12),
                     new Tree<int>(31)),
                 new Tree<int>(21),
                 new Tree<int>(14,
@@ -18,10 +16,7 @@ public class PlayWithTrees
                     new Tree<int>(6)));
 
         Console.WriteLine("Tree (indented):");
-        List<int> result = tree.OrderBFS().ToList();
-        result.Reverse();
-        Console.WriteLine(string.Join(" ", result));
-
+        tree.Print();
 
         Console.Write("Tree nodes:");
         tree.Each(c => Console.Write(" " + c));
