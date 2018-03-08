@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4B2E2460-4571-4A6E-BD1E-22D1F2FF447D}</ProjectGuid>
+    <ProjectGuid>{1286364C-A28D-4C7B-8B2A-F20906337BD2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Trie.Tests</RootNamespace>
-    <AssemblyName>Trie.Tests</AssemblyName>
+    <RootNamespace>KdTree.Tests</RootNamespace>
+    <AssemblyName>KdTree.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,9 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SoftUni.Wintellect.PowerCollections, Version=1.1.5733.22550, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SoftUni.Wintellect.PowerCollections.1.1.5733.22550\lib\net20\SoftUni.Wintellect.PowerCollections.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -53,17 +50,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TrieTests.cs" />
+    <Compile Include="KdTreeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Trie\Trie.csproj">
-      <Project>{820cb1d2-bd86-452d-b919-9bd39ff03f9c}</Project>
-      <Name>Trie</Name>
+    <ProjectReference Include="..\KdTree\KdTree.csproj">
+      <Project>{c90f5499-51ce-4da1-876f-fb10ceaee28a}</Project>
+      <Name>KdTree</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
